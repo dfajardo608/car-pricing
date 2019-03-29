@@ -43,7 +43,8 @@ app.layout = html.Div(children=[
         ]),
     ],style={'width': '100%', 'display': 'inline-block','color': 'brown', 'fontSize': 40}),              
      html.Div([##Solicitud de información
-             html.Label('Ingrese la siguiente información'),
+               html.Label('Ingrese la siguiente información:'),
+               html.Label(' '),
              html.Div([##cuad1                                    
 					html.Label('Marca del vehículo:'),
 					dcc.Input(id='marca',
@@ -51,24 +52,28 @@ app.layout = html.Div(children=[
 						type='text',
 						value='Ford'
 					),
+                    html.Label(' '),
 					html.Label('Modelo del vehículo:'),
 					dcc.Input(id='modelo',
 						placeholder='Enter a value...',
 						type='text',
 						value='EscapeFWD'
-					),	
+					),
+                    html.Label(' '),
 					html.Label('Año del vehículo:'),
 					dcc.Input(id='year',
 						placeholder='Enter a value...',
 						type='number',
 						value='2015'
 					),
+                    html.Label(' '),
 					html.Label('Millaje del vehículo:'),
 					dcc.Input(id='millas',
 						placeholder='Enter a value...',
 						type='number',
 						value='23388'
 					),
+                    html.Label(' '),
 					html.Label('Estado:'),
 					dcc.Input(id='estado',
 						placeholder='Enter a value...',
@@ -78,10 +83,12 @@ app.layout = html.Div(children=[
             ],style={'margin':'auto','width': '50%', 'display': 'inline-block'}
             )             
     ]),
+    html.Label(' '),
     html.Div([## Envío de información
            html.Label('Presione el botón para cargar su información'), 
             html.Button('BOTÓN DE CARGA', id='button',style={'margin':'auto','width': "20%", 'backgroundColor': 'yellow'})
-    ]),            
+    ]),
+    html.Label(' '),
 	html.Div([##Respuesta
 					html.Div([ ##cuad3.1
 						html.Label('El precio estimado es:'),
