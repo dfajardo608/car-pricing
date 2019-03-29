@@ -127,4 +127,4 @@ def prediccion_precio (	n_clicks, marca,modelo,year, millas,estado):
 # Deployment																	 				 	 #														 #
 # ################################################################################################## #
 if __name__ == '__main__':
-    app.run_server(debug=True, use_reloader=True, host='0.0.0.0', port=5000)
+    app.run_server(debug=True, use_reloader=True, host='0.0.0.0', port=8888)
