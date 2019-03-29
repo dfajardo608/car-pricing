@@ -73,9 +73,20 @@ app.layout = html.Div(children=[
 						type='number',
 						value='23388'
 					),
+                    
+                   html.Label('Dropdown'),
+                   dcc.Dropdown(id='estado',
+                                options=[
+                                         {'label': 'Ohio', 'value': 'OH'},
+                                         {'label': 'California', 'value': 'CA'},
+                                         {'label': 'San Francisco', 'value': 'SF'}
+                                         ],
+                                value='OH'
+                                ),
+                       
                     html.Label(' '),
 					html.Label('Estado:'),
-					dcc.Input(id='estado',
+					dcc.Input(id='estado2',
 						placeholder='Enter a value...',
 						type='text',
 						value='OH'
