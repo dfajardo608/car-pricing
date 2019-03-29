@@ -44,7 +44,7 @@ app.layout = html.Div(children=[
     ],style={'width': '100%', 'display': 'inline-block','color': 'brown', 'fontSize': 40}),              
      html.Div([##Solicitud de información
                html.Label('Ingrese la siguiente información:'),
-               html.Label(' '),
+               html.Label('\n'),
              html.Div([##cuad1                                    
 					html.Label('Marca del vehículo:'),
 					dcc.Input(id='marca',
