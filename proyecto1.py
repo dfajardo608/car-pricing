@@ -36,7 +36,7 @@ app.config['suppress_callback_exceptions']=True
 app.layout = html.Div(children=[
     html.Div([
         html.Div([##Título
-            html.H1(children='VEHICLE PRICE',style={'margin':'auto','width': "50%",'color': 'brown', 'fontSize': 40}),
+            html.H1(children='CAR PRICING',style={'margin':'auto','width': "50%",'color': 'brown', 'fontSize': 40}),
             html.Div(children='''
                 Aplicación para el cálculo del precio de vehículos usados'''
 			,style={'margin':'auto','width': "40%",'color': 'brown', 'fontSize': 20}),
