@@ -45,15 +45,8 @@ app.layout = html.Div(children=[
      html.Div([##Solicitud de información
                html.Label('Ingrese la siguiente información:'),
                html.Label('\n'),
-             html.Div([##cuad1                                    
-					html.Label('Marca del vehículo:'),
-					dcc.Input(id='marca2',
-						placeholder='Enter a value...',
-						type='text',
-						value='Ford'
-					),
-                    
-                   html.Label('Dropdown'),
+             html.Div([##cuad1
+                   html.Label('Marca del vehículo:'),
                    dcc.Dropdown(id='marca',
                                 options=[
                                          {'label': 'Nissan', 'value': 'Nissan'},
@@ -121,19 +114,11 @@ app.layout = html.Div(children=[
 						value='23388'
 					),
                     
-                   html.Label('Dropdown'),
-                   dcc.Dropdown(id='estado',
-                                options=[
-                                         {'label': 'Ohio', 'value': 'OH'},
-                                         {'label': 'California', 'value': 'CA'},
-                                         {'label': 'San Francisco', 'value': 'SF'}
-                                         ],
-                                value='OH'
-                                ),
+                   
                        
                     html.Label(' '),
 					html.Label('Estado:'),
-					dcc.Input(id='estado2',
+					dcc.Input(id='estado',
 						placeholder='Enter a value...',
 						type='text',
 						value='OH'
